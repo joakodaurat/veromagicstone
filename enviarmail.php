@@ -27,10 +27,24 @@ $subject = "Vero! tiene un nuevo mensaje de la pagina :)";
    $headers = "MIME-Version: 1.0" . "\r\n";
    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
    $headers .= "From:" . $from;
-if(mail($to,$subject,$message, $headers)) {
-    header("Location: index.html#contact");
+
+if ($_POST['stopspam'] != ""){
+ // Es un SPAMbot
+ exit();
+
 } else {
+  
+   // Es un usuario real, proceder a enviar el formulario.
+   if(mail($to,$subject,$message, $headers)) {
+
+    header("Location: index.html#contact");
+    } else {
     echo "Message was not sent.";
+      }
 }
+
+
+
+
 ?>
 
