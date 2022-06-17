@@ -17,8 +17,8 @@ $subject = "Vero! tiene un nuevo mensaje de la pagina :)";
    </head>
    <body>
        <p>Nombre:".$nombre."</p>
-       <p>Email:".$email."</p>
-       <p>Mensaje:".$email."</p>
+       <p>Email: " .$email."</p>
+       <p>Mensaje:</p>
         <p>".$_POST['mensaje']."</p>
    </body>
    </html>
