@@ -46,6 +46,21 @@ body, html {
    .morelink:hover { text-decoration:underline; }
    .hidden { display:none; }
 
+   .morecontent1 { display: none; }
+   .morelink1 { display: block; cursor: pointer; color:#2196f3; }
+   .morelink1:hover { text-decoration:underline; }
+   .hidden1 { display:none; }
+
+   .morecontent2 { display: none; }
+   .morelink2 { display: block; cursor: pointer; color:#2196f3; }
+   .morelink2:hover { text-decoration:underline; }
+   .hidden2 { display:none; }
+
+   .morecontent3 { display: none; }
+   .morelink3 { display: block; cursor: pointer; color:#2196f3; }
+   .morelink3:hover { text-decoration:underline; }
+   .hidden3 { display:none; }
+
 .text-dark {
   color:#7b4222 !important;
 }
