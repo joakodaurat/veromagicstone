@@ -444,9 +444,9 @@
                   <input style="display: none;" name="stopspam" class="escondido" />
 
                   <div class="g-recaptcha captchastyle"  data-sitekey="6Ld8KLAiAAAAADF5vGhoktS9URFZNt7wB_bJ-Nh7"></div>
-                  
+                  <div id="g-recaptcha-error"></div>
                 <p class="text-center mt-4 mb-0">
-          <button id="submit-btn" class="btn btn-primary rounded-pill d-inline-flex" type="submit">Enviar</button>
+              <button id="enviar" class="btn btn-primary rounded-pill d-inline-flex" type="button">Enviar</button>
                 </p>
               </form>
           </div>
@@ -620,6 +620,23 @@
 
   });
 
+  </script>
+
+  <script>
+
+    $("#enviar").click(function(){
+          var response = grecaptcha.getResponse();
+          if(response.length == 0) {
+                document.getElementById('g-recaptcha-error').innerHTML = '<p class="text-center" style="color:red;">Debe seleccionar el captcha</p>';
+                return false;
+          }
+      else {
+        $('form#contact-form').submit();
+      }
+    });
+
+
+     
   </script>
 
 
