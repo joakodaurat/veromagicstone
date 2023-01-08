@@ -16,7 +16,7 @@ $atributos = json_decode($respuesta,TRUE);
 
 
 $from = "vero@veromagicstone.com";
-$to = "joaquin.daurat@gmail.com";
+$to = "veromagicstone@gmail.com";
 $subject = "Vero! tiene un nuevo mensaje de la pagina :)";
    $message = "
    <html>
